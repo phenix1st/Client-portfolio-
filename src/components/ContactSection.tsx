@@ -29,6 +29,13 @@ export const ContactSection: React.FC = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    // Build a mailto link with the form data and open it
+    const subject = encodeURIComponent(`Portfolio Inquiry from ${formData.name}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    );
+    window.open(`mailto:anissoualah11@gmail.com?subject=${subject}&body=${body}`, '_blank');
+
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitted(true);
@@ -39,7 +46,7 @@ export const ContactSection: React.FC = () => {
         origin: { y: 0.6 },
         colors: ['#FFFFFF', '#A1A1AA', '#E4E4E7'],
       });
-    }, 1000);
+    }, 600);
   };
 
   return (
@@ -107,10 +114,13 @@ export const ContactSection: React.FC = () => {
 
             {/* Quick Info Pills */}
             <div className="space-y-3">
-              <div className="flex items-center gap-3 p-3.5 rounded-xl bg-[#080808] border border-white/8 text-xs text-slate-300">
+              <a
+                href="mailto:anissoualah11@gmail.com"
+                className="flex items-center gap-3 p-3.5 rounded-xl bg-[#080808] border border-white/8 text-xs text-slate-300 hover:border-white/20 hover:text-white transition-colors"
+              >
                 <Mail className="w-4 h-4 text-slate-400 flex-shrink-0" />
-                <span>anissoualeh.edits@gmail.com</span>
-              </div>
+                <span>anissoualah11@gmail.com</span>
+              </a>
               <div className="flex items-center gap-3 p-3.5 rounded-xl bg-[#080808] border border-white/8 text-xs text-slate-300">
                 <MapPin className="w-4 h-4 text-slate-400 flex-shrink-0" />
                 <span>Algeria — Remote / Worldwide</span>

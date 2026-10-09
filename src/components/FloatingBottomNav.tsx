@@ -8,9 +8,9 @@ interface FloatingBottomNavProps {
 
 export const FloatingBottomNav: React.FC<FloatingBottomNavProps> = ({ activeSection }) => {
   const navItems = [
-    { id: 'home', label: 'Home', icon: Home, href: '#home' },
-    { id: 'works', label: 'Works', icon: Briefcase, href: '#work' },
-    { id: 'contact', label: 'Contact', icon: Mail, href: '#contact' },
+    { id: 'home', label: 'Home', icon: Home, href: '#home', external: false },
+    { id: 'works', label: 'Works', icon: Briefcase, href: '#work', external: false },
+    { id: 'contact', label: 'Email', icon: Mail, href: 'mailto:anissoualah11@gmail.com', external: true },
   ];
 
   return (
@@ -27,8 +27,10 @@ export const FloatingBottomNav: React.FC<FloatingBottomNavProps> = ({ activeSect
             <a
               key={item.id}
               href={item.href}
+              target={item.external ? '_blank' : undefined}
+              rel={item.external ? 'noopener noreferrer' : undefined}
               className={`relative flex flex-col items-center justify-center min-w-[62px] sm:min-w-[72px] py-1.5 px-2 rounded-xl transition-all duration-300 ${
-                isActive
+                isActive && !item.external
                   ? 'text-black font-semibold'
                   : 'text-slate-400 hover:text-white hover:bg-white/5'
               }`}
