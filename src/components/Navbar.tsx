@@ -45,7 +45,7 @@ export const Navbar: React.FC<NavbarProps> = ({ isMuted, toggleAudio }) => {
             </div>
             <div className="flex flex-col text-left">
               <span className="font-heading font-bold text-sm tracking-wider text-slate-100 group-hover:text-cyan-300 transition-colors uppercase">
-                Anis Soualeh
+                Anis Soualah
               </span>
               <span className="text-[11px] font-mono text-slate-400 tracking-tight">
                 @vex.11_

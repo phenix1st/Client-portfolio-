@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
         {/* Brand & Copyright */}
         <div className="flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left">
           <span className="font-heading font-black text-sm text-white tracking-wider">
-            ANIS SOUALEH <span className="text-cyan-400 font-mono text-xs">(@vex.11_)</span>
+            ANIS Soualah <span className="text-cyan-400 font-mono text-xs">(@vex.11_)</span>
           </span>
           <span className="hidden sm:inline text-slate-700">•</span>
           <span className="text-xs text-slate-500 font-mono">
@@ -63,7 +63,7 @@ export const Footer: React.FC = () => {
               <InstagramIcon className="w-4 h-4" />
             </a>
             <a
-              href="mailto:anissoualeh.edits@gmail.com"
+              href="mailto:anisSoualah.edits@gmail.com"
               className="p-2 rounded-lg bg-slate-900/60 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:border-cyan-500/40 transition-colors"
               aria-label="Email"
             >

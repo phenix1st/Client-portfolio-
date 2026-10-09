@@ -31,7 +31,7 @@ export const HeroSection: React.FC = () => {
 
             {/* Clean, Full Heading Display */}
             <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-tight text-white leading-tight">
-              ANIS SOUALEH
+              ANIS Soualah
             </h1>
 
             {/* Subtle white accent line */}
@@ -102,10 +102,10 @@ export const HeroSection: React.FC = () => {
           <div className="relative w-full max-w-md rounded-3xl p-3 bg-[#080808] border border-white/10 shadow-[0_30px_70px_rgba(0,0,0,0.9)]">
             <div className="relative rounded-2xl overflow-hidden aspect-[3/4] bg-black flex items-center justify-center">
               
-              {/* Creator Photo - Anis Soualeh */}
+              {/* Creator Photo - Anis Soualah */}
               <img
                 src="/anis-portrait.jpg"
-                alt="Anis Soualeh (@vex.11_)"
+                alt="Anis Soualah (@vex.11_)"
                 className="w-full h-full object-cover object-center filter contrast-105"
               />
 
@@ -118,7 +118,7 @@ export const HeroSection: React.FC = () => {
                   "Every frame must earn the viewer's second. When pacing meets emotion, retention takes care of itself."
                 </p>
                 <span className="block mt-2 text-[11px] font-mono text-slate-400 font-semibold tracking-wider">
-                  — Anis Soualeh (@vex.11_)
+                  — Anis Soualah (@vex.11_)
                 </span>
               </div>
             </div>
